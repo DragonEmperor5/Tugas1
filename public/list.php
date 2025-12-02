@@ -1,9 +1,9 @@
 <?php
-require_once __DIR__ . '/../src/config.php';
-require_once __DIR__ . '/../src/Database.php';
-require_once __DIR__ . '/../src/repositories/MahasiswaRepository.php';
+require_once __DIR__ . '/src/config.php';
+require_once __DIR__ . '/src/Database.php';
+require_once __DIR__ . '/src/repositories/MahasiswaRepository.php';
 
-$config = require __DIR__ . '/../src/config.php';
+$config = require __DIR__ . '/src/config.php';
 $db = Database::getInstance($config)->getConnection();
 $repo = new MahasiswaRepository($db);
 $students = $repo->all();
