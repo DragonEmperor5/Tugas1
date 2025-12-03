@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #F87B1B;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.table th {
+    background: #F87B1B;
+    color: white;
+    text-align: left;
+}
+
+.table tr:hover {
+    background: #fafafa;
+}
+
+.table img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-add { background: #F87B1B; }
+.btn-edit { background: #FFA500; color: white; }
+.btn-delete { background: #dc3545; }
+
+form .input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #F87B1B;
+    padding: 8px 14px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+/* Detail Page Styling */
+.detail-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    width: 120px;
+}
+
+.detail-value {
+    color: #555;
+}
+
+.detail-photo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.detail-photo img {
+    max-width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+.back-link {
+    margin-top: 20px;
+    display: inline-block;
+}

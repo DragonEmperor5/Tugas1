@@ -2,7 +2,12 @@
 // public/create.php
 ?>
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Tambah Mahasiswa</title></head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tambah Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 <body>
 <h1>Tambah Mahasiswa</h1>
 <form action="store.php" method="post" enctype="multipart/form-data">

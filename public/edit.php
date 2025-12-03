@@ -3,7 +3,7 @@ require_once __DIR__ . '/src/config.php';
 require_once __DIR__ . '/src/Database.php';
 require_once __DIR__ . '/src/repositories/MahasiswaRepository.php';
 
-$config = require __DIR__ . '/../src/config.php';
+$config = require __DIR__ . '/src/config.php';
 $db = Database::getInstance($config)->getConnection();
 $repo = new MahasiswaRepository($db);
 
@@ -15,7 +15,12 @@ if(!$student){
 }
 ?>
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Edit Mahasiswa</title></head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
 <body>
 <h1>Edit Mahasiswa</h1>
 <form action="update.php" method="post" enctype="multipart/form-data">
