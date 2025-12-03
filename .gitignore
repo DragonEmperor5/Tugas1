@@ -1,0 +1,23 @@
+# Folder upload
+public/uploads/*
+
+# Kecuali file placeholder
+!public/uploads/.gitkeep
+
+# Vendor jika menggunakan composer
+/vendor/
+
+# File environment / config sensitif
+src/config.php
+
+# Cache
+*.cache
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Sistem OS
+Thumbs.db
+.DS_Store

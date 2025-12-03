@@ -1,4 +1,8 @@
 <?php
+// === WAJIB LOGIN ===
+require_once __DIR__ . '/src/Auth.php';
+Auth::check(); // redirect ke login.php jika belum login
+
 require_once __DIR__ . '/src/config.php';
 require_once __DIR__ . '/src/Database.php';
 require_once __DIR__ . '/src/repositories/MahasiswaRepository.php';
@@ -16,8 +20,14 @@ $students = $repo->all();
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>Sistem Informasi Mahasiswa</nav>
-  
+
+  <!-- NAVBAR TAMPILKAN USER -->
+  <nav>
+    Sistem Informasi Mahasiswa |
+    Login sebagai: <strong><?= htmlspecialchars($_SESSION['username']) ?></strong>
+    | <a href="logout.php">Logout</a>
+  </nav>
+
   <div class="container">
     <h2>Daftar Mahasiswa</h2>
     <p><a href="create.php" class="btn btn-add">+ Tambah Mahasiswa</a></p>
